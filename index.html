@@ -5,56 +5,182 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>INTERNETALIVE</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      margin: 40px;
       font-family: Arial, sans-serif;
       color: #000;
       background: #fff;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
     }
+
+    .container {
+      display: flex;
+      gap: 40px;
+      max-width: 1400px;
+      margin: 0 auto;
+      align-items: flex-start;
+    }
+
+    .content {
+      flex: 1;
+      min-width: 0; 
+    }
+
+    .images {
+      display: flex;
+      flex-direction: column; 
+      gap: 16px;
+      flex-shrink: 0;
+    }
+
+    .images img {
+      width: 124px; 
+      height: 174px; 
+      object-fit: cover;
+      border: 1px solid #000; 
+      display: block;
+    }
+
     h1 {
-      font-size: 96px; /* bigger title */
+      font-size: clamp(40px, 8vw, 92px);
       font-weight: bold;
-      margin-bottom: 30px;
+      margin: 0 0 20px 0;
+      line-height: 1.1;
     }
+
     h2 {
-      font-size: 56px; /* bigger subtitles */
-      margin-top: 25px;
-      margin-bottom: 15px;
+      font-size: clamp(28px, 5vw, 56px);
+      margin: 40px 0 16px 0;
+      line-height: 1.2;
     }
+
     p {
-      font-size: 32px; /* bigger paragraph text */
-      line-height: 1.7;
+      font-size: clamp(16px, 3vw, 32px);
+      line-height: 1.4;
+      margin: 0 0 20px 0;
     }
+
     a {
-      font-size: 32px;
+      font-size: clamp(16px, 3vw, 32px);
       color: #000;
       text-decoration: underline;
+    }
+
+    a:hover {
+      background-color: #f0f0f0;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 16px;
+      }
+
+      .container {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .images {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .images img {
+        width: 100px;
+        height: 140px;
+      }
+
+      h2 {
+        margin: 30px 0 12px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 12px;
+      }
+
+      .container {
+        gap: 20px;
+      }
+
+      .images {
+        gap: 8px;
+      }
+
+      .images img {
+        width: 80px;
+        height: 112px;
+      }
+
+      h2 {
+        margin: 24px 0 8px 0;
+      }
+
+      p {
+        margin: 0 0 16px 0;
+      }
+    }
+
+    @media (max-width: 320px) {
+      .images {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .images img {
+        width: 90px;
+        height: 126px;
+      }
+    }
+    @media (min-width: 1200px) {
+      .container {
+        gap: 60px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>INTERNETALIVE</h1>
-  <p>
-    The rebirth of the internet a human-first social space with no advertisements, 
-    no bots, no crawlers, and no algorithmic promotion. Just real people sharing 
-    real stories and videos.
-  </p>
+  <div class="container">
+    <div class="content">
+      <h1>INTERNETALIVE</h1>
+      <p>
+        The rebirth of the internet a human-first social space with no advertisements, 
+        no bots, no crawlers, and no algorithmic promotion. Just real people sharing 
+        real stories and videos.
+      </p>
 
-  <h2>About</h2>
-  <p>
-    INTERNETALIVE is an experiment to reclaim the web as a place for people, not machines. 
-    No tracking, no manipulation, no noise just honest voices.
-  </p>
+      <h2>About</h2>
+      <p>
+        INTERNETALIVE is an experiment to reclaim the web as a place for people, not machines. 
+        No tracking, no manipulation, no noise just honest voices.
+      </p>
 
-  <h2>Stories</h2>
-  <p>
-    <i>This is where people will share their stories — in plain text.</i> ^_^
-  </p>
+      <h2>Stories</h2>
+      <p>
+        <i>This is where people will share their stories in plain text.</i> ^_^
+      </p>
 
-  <h2>Join</h2>
-  <p>
-    Want to be part of INTERNETALIVE?  
-    <a href="https://github.com/Praveenkushinpi/INTERNETALIVE">Click here</a> to join the <i>DEVELOPMENT</i>
-  </p>
+      <h2>Join</h2>
+      <p>
+        Want to be part of INTERNETALIVE?  
+        <a href="https://github.com/Praveenkushinpi/INTERNETALIVE">Click here</a> to join the <i>DEVELOPMENT</i>
+      </p>
+    </div>
+
+    <div class="images">
+      <img src="cards/1.png" alt="Image 1">
+      <img src="cards/2.png" alt="Image 2">
+      <img src="cards/3.png" alt="Image 3">
+      <img src="cards/4.png" alt="Image 4">
+    </div>
+  </div>
 </body>
 </html>
