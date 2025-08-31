@@ -23,7 +23,7 @@ export default function Home() {
       <div className="relative z-10 flex flex-col items-center justify-center h-screen text-center px-4">
         <h1 className="text-9xl font-bold">INTERNETALIVE</h1>
         <p className="mt-4 text-xl max-w-xl">
-          INTERNETALIVE is an experiment to reclaim the web as a place for people, not machines.
+          INTERNETALIVE is an experiment to make the web as a place for people, not machines.
         </p>
       </div>
     </div>
