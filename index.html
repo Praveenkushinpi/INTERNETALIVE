@@ -33,12 +33,18 @@
     }
     .badges {
       margin-top: 50px;
+      display: flex;       /* row layout */
+      gap: 10px;           /* space between badges */
+      flex-wrap: wrap;     /* wrap if screen is narrow */
     }
     .badges img {
-      width: 600px;
-      height: 80px;
-      margin: 5px 0;
-      display: block;
+      width: 150px;        /* shrink from 600x80 */
+      height: 40px;
+      filter: grayscale(100%); /* grayscale effect */
+      transition: filter 0.3s ease;
+    }
+    .badges img:hover {
+      filter: grayscale(0%); /* back to color on hover */
     }
   </style>
 </head>
