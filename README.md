@@ -1,4 +1,5 @@
 #  INTERNETALIVE  
+<img width="1328" height="909" alt="image" src="https://github.com/user-attachments/assets/a4783e5d-3116-4870-a72b-2f6a90efafb6" />
 
 **“The rebirth of the internet — real people, real stories, real connections.”**
 
