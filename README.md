@@ -17,3 +17,4 @@ The internet today feels repetitive, artificial, and dominated by bots, ads, and
 A digital space built for **humans first**, where every voice matters equally.  
 
 ---
+![Alt](https://repobeats.axiom.co/api/embed/0c33f1c438037fe782d8ab33234ed02b58311a38.svg "Repobeats analytics image")
